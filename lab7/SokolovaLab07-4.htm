@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Замовлення товару</title>
+</head>
+<body bgcolor="#F0F8FF">
+    <h2 align="center">Завдання 4. Анкета замовлення товарів</h2>
+  <h2 align="center">Замовлення товару</h2>
+
+  <form action="#" method="post">
+    <table border="1" cellspacing="4" cellpadding="8" align="center" width="600">
+
+      <tr>
+        <td width="220"><label for="account">Номер банківського рахунку</label></td>
+        <td><input type="text" id="account" name="account" size="35" maxlength="29"></td>
+      </tr>
+
+      <tr>
+        <td><label for="userid">Особистий номер користувача</label></td>
+        <td><input type="password" id="userid" name="userid" size="35"></td>
+      </tr>
+
+      <tr>
+        <td valign="top">
+          <label for="goods">Список товарів</label><br>
+          <small>(для вибору декількох товарів утримуйте Ctrl)</small>
+        </td>
+        <td>
+          <select id="goods" name="goods" multiple size="6">
+            <option value="laptop">Ноутбук</option>
+            <option value="phone">Смартфон</option>
+            <option value="tablet">Планшет</option>
+            <option value="headphones">Навушники</option>
+            <option value="monitor">Монітор</option>
+            <option value="printer">Принтер</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td valign="top"><label for="comments">Коментарі</label></td>
+        <td><textarea id="comments" name="comments" rows="5" cols="40"></textarea></td>
+      </tr>
+
+      <tr>
+        <td valign="top">Вид оплати</td>
+        <td>
+          <input type="radio" id="cash" name="payment" value="cash" checked>
+          <label for="cash">Готівковий розрахунок</label><br>
+          <input type="radio" id="noncash" name="payment" value="noncash">
+          <label for="noncash">Безготівковий розрахунок</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td valign="top">Додаткова інформація у відповіді</td>
+        <td>
+          <input type="checkbox" id="balance" name="info" value="balance">
+          <label for="balance">Дані про залишки на рахунку</label><br>
+          <input type="checkbox" id="payments" name="info" value="payments">
+          <label for="payments">Список останніх виплат по рахунку</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" align="center">
+          <input type="submit" value="Замовити">
+          <input type="reset" value="Очистити форму">
+        </td>
+      </tr>
+
+    </table>
+  </form>
+
+</body>
+</html>
